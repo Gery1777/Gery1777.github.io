@@ -1,0 +1,114 @@
+html{
+    min-height:100%;
+}
+body{
+    height:100%;
+    font-family: sans-serif;
+    color:#6b6868;
+    background: linear-gradient(to  bottom, #55CCAA 0%, #497BE8 200%);
+    background-repeat:no-repeat ;
+}
+
+.container{
+    margin:auto;
+    text-align: center;
+    background-color: #EEEEEE;
+    width:60%;
+    border-radius:5px;
+}
+
+.container h1 {
+    font-weight: lighter;
+    font-size:60px;
+    margin-bottom: 15px;
+}
+
+.new-item{
+    display:flex;
+    justify-content: center;
+}
+
+.purplebutton{
+    background-color: rgb(200,0,200,0.4);
+    border:1.5px solid #AAAAAA;
+    border-radius:5px;
+    border-left:none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color:white;
+    padding:20px;
+    transition:0.5s;
+    font-size:20px;
+}
+
+.purplebutton.active{
+    background-color: rgb(200,0,200,1);
+    transition:0.5s;
+    cursor:pointer;
+}
+
+#txtAddListItem{
+    border:1.5px solid #AAAAAA;
+    border-radius:5px;
+    border-right:none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 30px;
+    max-width:60%;
+}
+
+.list{
+    list-style-type: none;
+    padding-inline-start:0px;
+   
+}
+
+.list li{
+    text-align:left;
+    line-height: 60px;
+    background:rgba(89, 180, 233, 0.1);
+    border-radius:5px;
+    margin:10px;
+    position:relative;
+    padding-right:2px;
+    font-size:30px;
+    box-shadow:0px 0px 1px 0px grey;
+}
+
+.list li span{
+    position:absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right:0px;
+    color:#fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+
+.list li span:hover {
+    background: rgb(200,50,50);
+    transition:0.5s;
+  }
+
+
+.footer{
+    text-align: left;
+    margin-left:10px;
+    position:relative;
+    padding-bottom:5px;
+}
+
+.footer button{
+    position:absolute;
+    right:10px;
+    bottom:5px;
+    border:none;
+    background: none;
+    border-radius:5px;
+    box-shadow:0px 0px 1px 0px grey;
+    cursor: pointer;
+    transition:0.5s;
+}
