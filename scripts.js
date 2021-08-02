@@ -1,6 +1,7 @@
 //getting inputs
 const inputbox = document.getElementById("txtAddListItem");
 const addbutton = document.getElementById("btnAddListItem");
+const check = document.getElementById("checky")
 const todolist = document.querySelector(".list")
 
 inputbox.onkeyup = () => {
@@ -42,7 +43,7 @@ function showlist() {
     let new_row = "";
 
     listitems.forEach((element, index) => {
-        new_row += `<li> ${element} <span><i class="fas fa-trash" onclick=deletetask(${index})></i></span></li>`
+        new_row += `<li> ${element} <span class="check"><input type="checkbox"></span> <span class="trash"><i class="fas fa-trash" onclick=deletetask(${index})></i></span></li>`
     });
     todolist.innerHTML = new_row;
     inputbox.value = "";
@@ -80,5 +81,3 @@ function write_footer() {
     footer.innerHTML = (`<i>You have ${rowcount} items on your list.</i>  <button ID="btnClearAll" OnClick=clearall();> Clear All</button>`)
 }
 write_footer();
-
-
